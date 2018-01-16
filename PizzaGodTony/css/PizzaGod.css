@@ -1,0 +1,146 @@
+body {
+    background-image: url('../img/pizzabg.png');
+    background-repeat: repeat;
+	background-position: right bottom;
+    background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+.navbar {
+    list-style:none;
+    text-align:center;
+}
+.navimg {
+	padding-top:10px;
+}
+.nav-link1 {
+	border:1px outset #ccc;
+	border-color: green;
+	border-radius: 5px;
+	border-width: 10px;
+	text-indent: 50px;
+	text-shadow: 1px 2px green;
+	display:inline;
+	text-align: left;
+}
+.nav-link2 {
+	text-indent: 50px;
+	text-shadow: 3px 2px black;
+	display:inline;
+	text-align: center;
+	margin-right: 600px;
+}
+.nav-link3 {
+	text-indent: 50px;
+	text-shadow: 3px 2px green;
+	display:inline;
+	text-align: right;
+	margin-right: 700px;
+}
+#menuform {
+	border-radius: 10px;
+	text-align: left;
+	flex: 1;
+	min-width: 0;
+	max-height: 450px;
+	display: table;
+    width: 100%;
+}
+.menu1 {
+	flex: 1 150px;
+	max-width: 275px;
+	border: 2px solid #080054;
+	border-radius: 20px;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .7);
+	padding: 0 0 30px 0;
+	background-color: lightgreen;
+	display: table-cell;
+}
+
+.menu {
+	padding: 0 5px 5px 20px;
+	border-style: inset;
+	background-color: lightgreen;
+	border-color: red;
+	border-radius: 20px;
+    border-width: 5px;
+	text-shadow: 1px 1px black;
+	height: 50%;
+    width: 275px;
+	display: table-cell;
+	text-align: left;
+}
+.button {
+	border-style: inset;
+	background-color: lightgreen;
+	border-color: red;
+	border-radius: 20px;
+    border-width: 5px;
+	cursor: pointer;
+	columns: 100px 2;
+	float: right;
+	padding: 10px;
+	width: 200px;
+	
+}
+.button>p {
+	text-align: center;
+}	
+
+#cart {
+	opacity: 0;
+	background-color: lightgreen;
+	margin: 0px auto;
+	width: 400px;
+	height: auto;
+	top: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+	border: 2px solid #080054;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+	border-radius: 25px;
+	display:flex;
+	overflow:auto;
+    min-height: 100%;
+}
+
+#title1 {
+	padding-left: 10px;
+}
+#title2 {
+	padding-left: 40px;
+}
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+#totalPrice{width:200px;height:190px;margin:0 auto;float:right;}
+#showText{width:200px;height:190px;margin:0px auto;float:left;}
+

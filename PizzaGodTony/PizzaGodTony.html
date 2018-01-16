@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+		<!-- javaScript source -->
+		<title>Pizza God Tony</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+		<link rel="stylesheet" href="./css/PizzaGod.css">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	</head>
+	<body id="home">
+	
+		<!-- Insert Chef Image Here -->
+		<aside>
+			<img class="navimg" src="./img/pizzachef.png" alt="Big Tony" align="right" width="200" height="200" style="float:right; margin-top:-15px;">
+		</aside>
+		<!-- Navigation Bar Items -->
+		<nav class="navbar" style="background-color:rgba(0,204,51,0.7); border:8px outset Tomato;">
+			<a class="nav-link1" href="#home" style="background-color:lightgreen; color:red; width: 370px;"><strong><h2>Pizza God Tony's</h2></strong></a>
+			<a class="nav-link2" href="#order" style="color:white;"><h3>Place an order</h3></a>
+			<a class="nav-link3" href="#address" style="color:black;"><h3>Location</h3></a>
+		</nav>
+		<!-- Menu Windows -->
+		
+		<form id="menuform">
+			<div class="menu">
+				<p><h4>Size:</h4></p>
+				<input class="size" type="radio" name="size" value="personal" checked> Personal<br>
+				<input class="size" type="radio" name="size" value="medium"> Medium<br>
+				<input class="size" type="radio" name="size" value="large"> Large<br>
+				<input class="size" type="radio" name="size" value="extralarge"> Extra Large<br>
+			</div><br>
+			<div class="menu">
+				<p><h4>Meats:</h4></p>
+				<input class="meats" type="checkbox" name="meats" value="pepperoni"> Pepperoni<br>
+				<input class="meats" type="checkbox" name="meats" value="sausage"> Sausage<br>
+				<input class="meats" type="checkbox" name="meats" value="canadianbacon"> Canadian Bacon<br>
+				<input class="meats" type="checkbox" name="meats" value="groundbeef"> Ground Beef<br>
+				<input class="meats" type="checkbox" name="meats" value="anchovy"> Anchovy<br>
+				<input class="meats" type="checkbox" name="meats" value="chicken"> Chicken<br>
+			</div><br>
+			<div class="menu">
+				<p><h4>Vegetables:</h4></p>
+				<input class="vegetables" type="checkbox" name="vegetables" value="tomatoes"> Tomatoes<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="onions"> Onions<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="olives"> Olives<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="greenpeppers"> Green Peppers<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="mushrooms"> Mushrooms<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="pineapple"> Pineapple<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="spinach"> Spinach<br>
+				<input class="vegetables" type="checkbox" name="vegetables" value="jalapeno"> Jalapeño<br>	
+			</div><br>
+			<div class="menu">
+				<p><h4>Cheese:</h4></p>
+				<input class="cheese" type="radio" name="cheese" value="regular" checked> Regular Cheese<br>
+				<input class="cheese" type="radio" name="cheese" value="nocheese"> No Cheese<br>
+				<input class="cheese" type="radio" name="cheese" value="extracheese"> Extra Cheese<br>
+			</div><br>
+			<div class="menu">
+				<p><h4>Sauce:</h4></p>
+				<input class="sauce" type="radio" name="sauce" value="marinara" checked> Marinara<br>
+				<input class="sauce" type="radio" name="sauce" value="white"> White<br>
+				<input class="sauce" type="radio" name="sauce" value="barbecue"> Barbecue<br>
+				<input class="sauce" type="radio" name="sauce" value="nosauce"> No Sauce<br>
+			</div><br>
+			<div class="menu">
+				<p><h4>Crust:</h4></p>
+				<input class="crust" type="radio" name="crust" value="plain" checked> Plain<br>
+				<input class="crust" type="radio" name="crust" value="garlicbutter"> Garlic Butter<br>
+				<input class="crust" type="radio" name="crust" value="cheesestuffed"> Cheese Stuffed<br>
+				<input class="crust" type="radio" name="crust" value="spicy"> Spicy<br>
+				<input class="crust" type="radio" name="crust" value="special"> House Special<br>
+			</div>
+		</form><br>
+		
+		<div class="controls">
+			<button class="button" onclick="getReceipt()">
+				<h4>Place Order!</h4>
+			<button class="button" onclick="clearSelected()">
+				<h4>Clear</h4>
+		</div>
+		<div id="cart" class="expand">
+				<div id="title1"><h3>You Ordered:</h3></div><br>
+				<div id="title2"><h3>Subtotal:</h3></div>
+				<div id="showText1"></div>
+				<div id="showText2"></div>
+				<div id="totalPrice"><h3>Total Price:</h3></div>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/pizzagod.js"></script>
+</html>
