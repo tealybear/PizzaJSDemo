@@ -1,1 +1,0 @@
-A quick JavaScript Demo pizza website! 
